@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 56%;
+}
+
+body {
+  background-color: #f4dfba;
+  font-family: "Merriweather", serif;
+  color: #333;
+}
+
+/* REJESTRACJA */
+.navbar {
+  /* background-color: #876445; */
+  background-color: #eee;
+  width: 100%;
+  height: 8rem;
+  padding-right: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+  box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+}
+
+.logo {
+  font-family: "Mr Dafoe", cursive;
+  font-size: 4.8rem;
+  padding: 0 0 1.2rem 3.2rem;
+}
+
+.form-link {
+  font-size: 1.6rem;
+}
+
+.form-link:link,
+.form-link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-content {
+  width: 120rem;
+  margin: 9.6rem auto;
+  text-align: center;
+}
+
+.main-text {
+  width: 60%;
+  text-align: left;
+}
+
+.main-content h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+  color: #222;
+}
+
+.main-content p {
+  font-size: 2.4rem;
+}
+
+.gallery {
+  width: 120rem;
+  margin: 9.6rem auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+.main-img {
+  width: 90%;
+}
+
+.bg {
+  width: 100%;
+  background-color: #eec373;
+}
+
+.form-container {
+  width: 120rem;
+  margin: 9.6rem auto 0 auto;
+  text-align: center;
+  padding-top: 9.6rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 3.2rem;
+  padding: 4.8rem;
+}
+
+.form-heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.form-field,
+.form-btn {
+  padding: 1.2rem;
+  border-radius: 9px;
+  border: 0;
+  width: 60%;
+  justify-self: end;
+}
+
+.pswd-field,
+.form-btn {
+  justify-self: start;
+}
+
+.form-btn {
+  background-color: #ca965c;
+  cursor: pointer;
+  font-weight: 700;
+  color: inherit;
+
+  transition: all 0.6s;
+}
+
+.form-btn:hover,
+.from-btn:active,
+.login-btn:hover,
+.login-btn:active {
+  background-color: #876445;
+  color: #fff;
+}
+
+.login-option {
+  font-size: 1.6rem;
+  padding-bottom: 9.6rem;
+}
+
+.login-option a {
+  transition: all 0.6s;
+}
+
+.login-option a:link,
+.login-option a:visited {
+  color: inherit;
+}
+
+.login-option a:hover,
+.login-option a:active {
+  color: #eee;
+}
+
+.register-done-container {
+  width: 120rem;
+  margin: 9.6rem auto;
+  text-align: center;
+}
+
+.register-done-text,
+.register-done-btn {
+  font-size: 5.2rem;
+  text-align: center;
+}
+
+.register-done-btn:link,
+.register-done-btn:visited {
+  color: inherit;
+}
+
+.register-done-btn:hover,
+.register-done-btn:active {
+  color: #eee;
+}
+
+
+/* OGŁOSZENIA */
+.posts-container {
+  width: 120rem;
+  margin: 9.6rem auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.posts-row {
+  width: 120rem;
+  font-size: 1.6rem;
+  background-color: #eee;
+  height: 14rem;
+  padding: 2.4rem;
+  border-radius: 3px;
+
+  display: flex;
+  gap: 3.6rem;
+
+  position: relative;
+
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+  box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+}
+
+.add-post {
+  font-size: 1.3rem;
+}
+
+.posts-row-element {
+  align-self: flex-start;
+
+  
+}
+
+.pre-title {
+  width: 20%;
+}
+
+.pre-content {
+  width: 70%;
+}
+
+.follow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.follow-link:link,
+.follow-link:visited,
+.follow-link:active,
+.follow-link:hover,
+.delete-link:link,
+.delete-link:visited,
+.delete-link:active,
+.delete-link:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.delete-link {
+  font-size: 4.8rem;
+}
+
+.favourite-icon {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #34626C;
+  display: block;
+  padding: 0 1.2rem;
+  
+  pointer-events: none;
+}
+
+
+/* LOGO */
+
+.logo-link:link,
+.logo-link:visited,
+.logo-link:active,
+.logo-link:hover {
+  text-decoration: none;
+  color: #333;
+}

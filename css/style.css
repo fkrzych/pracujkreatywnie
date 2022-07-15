@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  body {
+    /* background-color: #f4dfba; */
+    background-color: #ede0ca;
+    font-family: "Merriweather", serif;
+    color: #333;
+  }
+
+  .hidden {
+      display: none !important;
+  }
+
+  .nav-btns {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .favourite-icon {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #34626C;
+    display: block;
+    padding: 0 1.2rem;
+    
+    pointer-events: none;
+  }
+
+  .favourite-icon:hover,
+  .favourite-icon:active {
+    color: #839B97;
+  }
+
+  .favourites-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.7rem 0 0.7rem 0.7rem;
+    border: 1px solid #839B97;
+    border-radius: 9px;
+  }
+
+  .favourites-btn:hover,
+  .favourites-btn:active {
+    background-color: #839B97;
+    cursor: pointer;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 0.6rem;
+  }
+
+  .user-info-text {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .logout-btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: inherit;
+    background-color: #DF7861;
+    margin-left: 1.2rem;
+  }
+
+  .logout-btn:hover,
+  .logout-btn:active {
+    color: #fff;
+    background-color: #DF7861;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    
+  }
+
+  .post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    width: 60rem;
+    padding: 0 6.4rem;
+    font-size: 1.6rem;
+    background-color: #eec373;
+
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+    box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+  }
+
+  .close-adding-btn {
+    font-size: 4.8rem;
+    color: #333;
+    align-self: end;
+    margin-top: 1.2rem;
+    margin-bottom: -3.6rem;
+  }
+
+  .close-adding-btn:hover {
+    cursor: pointer;
+  }
+
+  .form-field {
+    width: auto;
+  }
+
+  .form-btn {
+    width: auto;
+  }
+
+  .add-post-btn {
+    margin-top: -3.6rem;
+  }
+
+  /* OGŁOSZENIA */
+  .posts-container {
+    width: 120rem;
+    margin: 9.6rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .posts-row {
+    width: 120rem;
+    font-size: 1.6rem;
+    background-color: #eee;
+    height: 14rem;
+    padding: 2.4rem;
+    border-radius: 3px;
+
+    display: flex;
+    gap: 3.6rem;
+
+    position: relative;
+
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+    box-shadow: 0px 0px 10px 1px rgba(66, 68, 90, 0.1);
+  }
+
+  .add-post {
+    font-size: 1.3rem;
+  }
+
+  .posts-row-element {
+    align-self: flex-start;
+
+    
+  }
+
+  .pre-title {
+    width: 20%;
+  }
+
+  .pre-content {
+    width: 70%;
+  }
+
+  .follow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+
+  .follow-link:link,
+  .follow-link:visited,
+  .follow-link:active,
+  .follow-link:hover,
+  .delete-link:link,
+  .delete-link:visited,
+  .delete-link:active,
+  .delete-link:hover {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .delete-link {
+    font-size: 4.8rem;
+  }
+
+  .posts-row-delete {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+  }
+
+  .unfollow-link {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .favourites-posts-row {
+    background-color: #839B97;
+  }
+
+
+  @media (max-width: 860px) {
+    .navbar {
+      flex-direction: column;
+      gap: 2.4rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .add-post,
+    .favourites-btn,
+    .user-info-text,
+    .logout-btn {
+      font-size: 0.9rem;
+    }
+
+    .favourites-btn {
+      padding: 0.4rem 0 0.4rem 0.4rem;
+    }
+  }
